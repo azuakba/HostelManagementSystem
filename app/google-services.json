@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "821754613682",
+    "project_id": "hostelmanagementsystem-f6a1b",
+    "storage_bucket": "hostelmanagementsystem-f6a1b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821754613682:android:aae7927b46732b142cdeab",
+        "android_client_info": {
+          "package_name": "com.swn.hostelmanagementsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDke0j-hGxvuHtRsIlUiUXVQ4_VK1V2BLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
