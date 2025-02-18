@@ -13,10 +13,18 @@
         android:theme="@style/Theme.HostelManagementSystem"
         tools:targetApi="31">
         <activity
+            android:name=".ui.student.StudentDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.admin.AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DashboardActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.HostelManagementSystem">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

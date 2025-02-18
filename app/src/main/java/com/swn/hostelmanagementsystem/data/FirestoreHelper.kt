@@ -9,13 +9,12 @@ object FirestoreHelper {
     private val auth = FirebaseAuth.getInstance()
 
     // Add a new user to Firestore
-    fun addUserToFirestore(name: String, email: String) {
+    fun addUserToFirestore(name: String, email: String, role: String = "student") {
         val userId = auth.currentUser?.uid ?: return
         val user = hashMapOf(
             "name" to name,
             "email" to email,
-            "role" to "student",  // Default role
-            "isActive" to true    // Active status for the user
+            "role" to role
         )
         db.collection("users").document(userId).set(user)
             .addOnSuccessListener {
