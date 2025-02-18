@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
+import com.google.firebase.FirebaseApp
 import com.swn.hostelmanagementsystem.ui.auth.LoginActivity
 import com.swn.hostelmanagementsystem.ui.auth.RegisterActivity
 
@@ -12,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        FirebaseApp.initializeApp(this)
         setContentView(R.layout.activity_main)
 
         val registerButton: Button = findViewById(R.id.btnRegister)
