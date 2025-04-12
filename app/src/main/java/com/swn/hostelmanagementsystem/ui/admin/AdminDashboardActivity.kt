@@ -2,14 +2,12 @@ package com.swn.hostelmanagementsystem.ui.admin
 
 import android.os.Bundle
 import android.util.Log
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.swn.hostelmanagementsystem.R
+import com.swn.hostelmanagementsystem.ui.student.Student
 
 class AdminDashboardActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView

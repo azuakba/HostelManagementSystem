@@ -1,4 +1,4 @@
-package com.swn.hostelmanagementsystem.ui.admin
+package com.swn.hostelmanagementsystem.ui.student
 
 data class  Student(
     val id: String = "",
