@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 import android.util.Log
 import com.swn.hostelmanagementsystem.R  // Ensure correct package import
+import com.swn.hostelmanagementsystem.ui.student.Student
 
 class StudentAdapter(private val studentList: MutableList<Student>) :
     RecyclerView.Adapter<StudentAdapter.ViewHolder>() {
