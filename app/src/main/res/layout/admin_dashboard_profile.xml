@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:contentDescription="@string/profile"
     tools:context=".ui.admin.ProfileActivity"
     android:padding="16dp">
