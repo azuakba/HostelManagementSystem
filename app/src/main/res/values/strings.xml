@@ -37,4 +37,14 @@
     <string name="set_privacy_preferences_for_data_and_system_usage">Set privacy preferences for data and system usage</string>
     <string name="general_settings">General Settings</string>
     <string name="adjust_system_settings_and_preferences">Adjust system settings and preferences</string>
+    <string name="add_fee">Add Fee</string>
+    <string name="fee_amount">Fee Amount</string>
+    <string name="no_history_found">No history found</string>
+    <string name="search">Search</string>
+    <string name="search_by_student_id_or_name">Search by Student ID or Name</string>
+    <string name="student_id">Student ID</string>
+    <string name="welcome_admin">Welcome, Admin!</string>
+    <string name="homepage">homepage</string>
+
+    <string name="welcome_Admin">Welcome, Admin!</string>
 </resources>

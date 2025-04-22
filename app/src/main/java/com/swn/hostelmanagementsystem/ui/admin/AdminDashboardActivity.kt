@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.swn.hostelmanagementsystem.R
 import com.swn.hostelmanagementsystem.ui.student.Student
+import com.swn.hostelmanagementsystem.ui.student.StudentAdapter
 
 class AdminDashboardActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
