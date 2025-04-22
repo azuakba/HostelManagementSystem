@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Fee_Management"
+            android:text="@string/fee_management"
             android:textSize="24sp"
             android:textStyle="bold"
             android:layout_gravity="center"

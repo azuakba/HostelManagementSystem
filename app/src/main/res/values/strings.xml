@@ -72,4 +72,16 @@
     <string name="attendance_tracking">Attendance tracking</string>
     <string name="use_this_feature_to_track_daily_attendance_status">Use this feature to track daily attendance status</string>
     <string name="update_attendance">Update attendance</string>
+    <string name="manage_students">Manage students</string>
+    <string name="student_list">Student list</string>
+    <string name="student_details">Student details</string>
+    <string name="student_name">Student name</string>
+    <string name="student_email">Student email</string>
+    <string name="room_number">Room number</string>
+    <string name="save_changes">Save changes</string>
+    <string name="add_edit_students">Add/Edit students</string>
+    <string name="total_fees_collected">Total fees collected\n</string>
+    <string name="_0">0</string>
+    <string name="fee_payment_history">Fee payment history\n</string>
+    <string name="add_new_fee">Add new fee\n</string>
 </resources>

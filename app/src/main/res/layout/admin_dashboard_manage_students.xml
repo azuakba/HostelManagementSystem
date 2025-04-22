@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:importantForAutofill="no"
-        android:text="@string/update_student_details"
+        android:text="@string/student_details"
         android:textStyle="bold"
         android:textSize="18sp"
         android:layout_marginTop="16dp"
