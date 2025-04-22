@@ -37,6 +37,7 @@
     <string name="set_privacy_preferences_for_data_and_system_usage">Set privacy preferences for data and system usage</string>
     <string name="general_settings">General Settings</string>
     <string name="adjust_system_settings_and_preferences">Adjust system settings and preferences</string>
+<<<<<<< HEAD
     <string name="pay_room_rent">pay room rent</string>
     <string name="pay_now">pay now</string>
     <string name="pay_mess_fee">pay mess fee</string>
@@ -62,4 +63,8 @@
     <string name="complaints_requests"><![CDATA[Complaints & Requests]]></string>
     <string name="payment">Payment</string>
     <string name="attendance">Attendance</string>
+=======
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+>>>>>>> 788a4870df45585b340ee4c7774e3f67f66b1035
 </resources>

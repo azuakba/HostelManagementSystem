@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,6 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HostelManagementSystem"
         tools:targetApi="31">
+        <activity android:name=".ui.admin.AdminDashboardProfileActivity" />
+33333333333333333333333333333333fffffffgtt44444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444lds999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;y,.
         <activity
             android:name=".ui.student.StudentDashboardActivity"
             android:exported="false" />
