@@ -56,8 +56,8 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/address"
                 android:inputType="textPostalAddress"
-                android:textColorHint="#616161"
-                tools:ignore="VisualLintTextFieldSize" />
+                android:textColorHint="@color/black"
+                tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -85,8 +85,9 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/email_Id"
                 android:inputType="textEmailAddress"
+                android:textColor="#121212"
                 android:textColorHint="#616161"
-                tools:ignore="VisualLintTextFieldSize" />
+                tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -102,8 +103,8 @@
                 android:hint="@string/bio"
                 android:inputType="textMultiLine"
                 android:lines="4"
-                android:textColorHint="#050705"
-                tools:ignore="VisualLintTextFieldSize" />
+                android:textColorHint="#616161"
+                tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton

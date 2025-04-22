@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fee Management"
+            android:text="@string/Fee_Management"
             android:textSize="24sp"
             android:textStyle="bold"
             android:layout_gravity="center"
@@ -61,7 +61,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Total Fees Collected"
+                    android:text="@string/total_fees_collected"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginBottom="8dp" />
@@ -70,7 +70,7 @@
                     android:id="@+id/totalFeesText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="₹0"
+                    android:text="@string/_0"
                     android:textSize="16sp"
                     android:textColor="@color/blue" />
             </LinearLayout>
@@ -93,7 +93,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add New Fee"
+                    android:text="@string/add_new_fee"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginBottom="8dp" />
@@ -149,7 +149,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fee Payment History"
+                    android:text="@string/fee_payment_history"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginBottom="8dp" />
