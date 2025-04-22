@@ -31,49 +31,50 @@ class StudentAdapter(private val studentList: MutableList<Student>) :
         holder.nameTextView.text = student.name
         holder.emailTextView.text = student.email
         holder.approveButton.isEnabled = !student.isApproved
+        holder.approveButton.visibility = if (student.isApproved) View.GONE else View.VISIBLE
 
         holder.approveButton.setOnClickListener {
-            if (!student.isApproved) {  // Prevent redundant updates
-                updateStudentApproval(student.id, true, position)
+            if (!student.isApproved) {
+                holder.approveButton.isEnabled = false  // Disable to prevent spam clicks
+                updateStudentApproval(student.id, true, position, holder.approveButton)
             }
         }
 
         holder.deleteButton.setOnClickListener {
-            deleteStudent(student.id, position)
+            holder.deleteButton.isEnabled = false  // Disable temporarily
+            deleteStudent(student.id, position, holder.deleteButton)
         }
     }
 
     override fun getItemCount() = studentList.size
 
-    private fun updateStudentApproval(studentId: String, isApproved: Boolean, position: Int) {
+    private fun updateStudentApproval(studentId: String, isApproved: Boolean, position: Int, button: Button) {
         val db = FirebaseFirestore.getInstance()
         db.collection("users").document(studentId)
             .update("isApproved", isApproved)
             .addOnSuccessListener {
                 Log.d("Firestore", "Student approval updated")
-
-                // Update local list and refresh UI
-                studentList[position].isApproved = isApproved
-                notifyItemChanged(position)
+                studentList.removeAt(position)
+                notifyItemRemoved(position)
             }
             .addOnFailureListener { e ->
                 Log.e("Firestore", "Error updating student", e)
+                button.isEnabled = true  // Re-enable button if failed
             }
     }
 
-    private fun deleteStudent(studentId: String, position: Int) {
+    private fun deleteStudent(studentId: String, position: Int, button: Button) {
         val db = FirebaseFirestore.getInstance()
         db.collection("users").document(studentId)
             .delete()
             .addOnSuccessListener {
                 Log.d("Firestore", "Student deleted")
-
-                // Remove from local list and update UI
                 studentList.removeAt(position)
                 notifyItemRemoved(position)
             }
             .addOnFailureListener { e ->
                 Log.e("Firestore", "Error deleting student", e)
+                button.isEnabled = true  // Re-enable if failed
             }
     }
 }

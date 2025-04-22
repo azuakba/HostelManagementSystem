@@ -37,4 +37,6 @@
     <string name="set_privacy_preferences_for_data_and_system_usage">Set privacy preferences for data and system usage</string>
     <string name="general_settings">General Settings</string>
     <string name="adjust_system_settings_and_preferences">Adjust system settings and preferences</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>
