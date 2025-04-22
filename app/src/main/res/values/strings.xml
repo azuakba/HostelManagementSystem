@@ -39,4 +39,23 @@
     <string name="adjust_system_settings_and_preferences">Adjust system settings and preferences</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="search">search</string>
+    <string name="search_by_student_id_or_name">Search by Student Id or Name</string>
+    <string name="student_id">Sudent Id</string>
+    <string name="fee_amount">Fee Amount</string>
+    <string name="add_fee">Add Fee</string>
+    <string name="no_history_found">No History Found</string>
+    <string name="Fee_Management">Fee Management</string>
+    <string name="total_fees_collected">Total Fees Collected</string>
+    <string name="_0">₹0</string>
+    <string name="add_new_fee">Add New Fee</string>
+    <string name="fee_payment_history">Fee Payment History</string>
+    <string name="student_list">Student List</string>
+    <string name="update_student_details">Update Student Details</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="student_email">Student Email</string>
+    <string name="student_name">Student Name</string>
+    <string name="room_number">Room Number</string>
+    <string name="manage_students">Manage Students</string>
+    <string name="add_edit_students">Add/Edit Students</string>
 </resources>
