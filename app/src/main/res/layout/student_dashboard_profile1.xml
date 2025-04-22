@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="@string/emailId"
+            android:text="@string/emailid"
             android:textSize="14sp" />
         <TextView
             android:id="@+id/phone_no"

@@ -134,7 +134,7 @@
                     android:id="@+id/payment_dues_details"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/payment_Dues"
+                    android:text="@string/payment_dues"
                     android:textSize="14sp"/>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
