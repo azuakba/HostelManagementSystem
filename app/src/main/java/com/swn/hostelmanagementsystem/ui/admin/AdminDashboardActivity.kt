@@ -12,11 +12,6 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.swn.hostelmanagementsystem.R
-<<<<<<< HEAD
-=======
-import com.swn.hostelmanagementsystem.ui.student.Student
-import com.swn.hostelmanagementsystem.ui.student.StudentAdapter
->>>>>>> b7d34c1041a2f09ee5798e52044d64851ac7fbf1
 
 class AdminDashboardActivity : AppCompatActivity() {
 
