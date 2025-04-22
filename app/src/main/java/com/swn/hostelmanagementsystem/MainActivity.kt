@@ -8,6 +8,7 @@ import android.widget.Button
 import com.google.firebase.FirebaseApp
 import com.swn.hostelmanagementsystem.ui.auth.LoginActivity
 import com.swn.hostelmanagementsystem.ui.auth.RegisterActivity
+import com.swn.hostelmanagementsystem.ui.student.PaymentHelper
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         FirebaseApp.initializeApp(this)
         setContentView(R.layout.activity_main)
+        PaymentHelper.startPayment(this, 5000.0, "exampleStudentID")
 
         val registerButton: Button = findViewById(R.id.btnRegister)
         val loginButton: Button = findViewById(R.id.btnLogin)
@@ -39,4 +41,5 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
     }
+
 }
