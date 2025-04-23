@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:contentDescription="@string/profile"
-    tools:context=".ui.admin.ProfileActivity"
+    tools:context=".ui.admin.AdminDashboardProfileActivity"
     android:padding="16dp">
 
     <LinearLayout

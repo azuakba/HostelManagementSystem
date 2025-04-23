@@ -12,7 +12,7 @@
         android:icon="@drawable/ic_person"
         android:title="Student Management" />
     <item
-        android:id="@+id/nav_rooms"
+        android:id="@+id/nav_fees"
         android:icon="@drawable/ic_bed"
-        android:title="Room Management" />
+        android:title="@string/fee_management" />
 </menu>

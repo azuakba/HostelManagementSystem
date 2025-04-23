@@ -78,9 +78,15 @@ class AdminDashboardActivity : AppCompatActivity() {
                     // Handle profile
                 }
                 R.id.nav_settings -> {
-                    // Handle settings
+                    startActivity(Intent(this, SettingsActivity::class.java))
                 }
-                // Add more cases as needed
+                R.id.nav_students -> {
+                    startActivity(Intent(this, ManageStudents::class.java))
+                }
+                R.id.nav_fees -> {
+                    startActivity(Intent(this,FeeManagement::class.java ))
+                    // implement room management later
+                }
             }
             drawerLayout.closeDrawers()
             true
@@ -95,6 +101,7 @@ class AdminDashboardActivity : AppCompatActivity() {
                 }
                 R.id.bottom_settings -> {
                     // Handle settings
+                    startActivity(Intent(this, SettingsActivity::class.java))
                     true
                 }
                 else -> false

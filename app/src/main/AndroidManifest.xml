@@ -14,7 +14,17 @@
         android:theme="@style/Theme.HostelManagementSystem"
         tools:targetApi="31">
         <activity android:name=".ui.admin.AdminDashboardProfileActivity" />
-33333333333333333333333333333333fffffffgtt44444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444lds999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;y,.
+        <activity android:name=".ui.admin.SettingsActivity" />
+        <activity android:name=".ui.admin.ManageStudents" />
+        <activity android:name=".ui.student.StudentDashboardProfile"/>
+
+        <activity android:name=".ui.admin.AddEditStudentActivity"/>
+        <activity android:name=".ui.student.StudentDashboardPayment"/>
+        <activity android:name=".ui.student.StudentDashboardRoomDetails"/>
+        <activity android:name=".ui.student.StudentSetting"/>
+        <activity android:name=".ui.student.StudentDashboardComplainAndRequest"/>
+        <activity android:name=".ui.student.StudentDashboardAttendance"/>
+        <activity android:name=".ui.admin.FeeManagement"/>
         <activity
             android:name=".ui.student.StudentDashboardActivity"
             android:exported="false" />

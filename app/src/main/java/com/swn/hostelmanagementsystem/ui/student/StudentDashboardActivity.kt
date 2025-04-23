@@ -1,21 +1,48 @@
 package com.swn.hostelmanagementsystem.ui.student
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import android.widget.TextView
 import com.swn.hostelmanagementsystem.R
 
 class StudentDashboardActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_student_dashboard)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        // Find all TextView elements by ID
+        val profile = findViewById<TextView>(R.id.profile)
+        val roomDetails = findViewById<TextView>(R.id.roomDetails)
+        val payment = findViewById<TextView>(R.id.payment)
+        val attendance = findViewById<TextView>(R.id.attendance)
+        val complainsAndRequests = findViewById<TextView>(R.id.complainsAndRequests)
+        val settings = findViewById<TextView>(R.id.settings)
+
+        // Set up click listeners
+        profile.setOnClickListener {
+            startActivity(Intent(this, StudentDashboardProfile::class.java))
+        }
+
+        roomDetails.setOnClickListener {
+            startActivity(Intent(this, StudentDashboardRoomDetails::class.java))
+        }
+
+        payment.setOnClickListener {
+            startActivity(Intent(this, StudentDashboardPayment::class.java))
+        }
+
+        attendance.setOnClickListener {
+            startActivity(Intent(this, StudentDashboardAttendance::class.java))
+        }
+
+        complainsAndRequests.setOnClickListener {
+            startActivity(Intent(this, StudentDashboardComplainAndRequest::class.java))
+        }
+
+        settings.setOnClickListener {
+            startActivity(Intent(this, StudentSetting::class.java))
         }
     }
 }
