@@ -101,4 +101,8 @@
     <string name="confirm_new_password">confirm new password</string>
     <string name="update_password">update password</string>
     <string name="change_password">Change Password</string>
+    <string name="admin_settings">Admin Settings</string>
+    <string name="Change_password">Change Password</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="LOGOUT">Logout</string>
 </resources>

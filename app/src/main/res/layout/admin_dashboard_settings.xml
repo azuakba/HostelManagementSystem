@@ -12,7 +12,7 @@
         android:id="@+id/textViewSettingsHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Admin Settings"
+        android:text="@string/admin_settings"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
@@ -36,7 +36,7 @@
                 android:id="@+id/tvEditProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Edit Profile"
+                android:text="@string/edit_profile"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -60,35 +60,29 @@
                 android:id="@+id/tvChangePassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Change Password"
+                android:text="@string/Change_password"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
-    <!-- Logout Card -->
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="4dp"
-        app:cardBackgroundColor="#FFCDD2">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center">
 
-            <TextView
+            <Button
                 android:id="@+id/tvLogout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Logout"
+                android:text="@string/LOGOUT"
+                android:textAllCaps="true"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="#B71C1C" />
+                android:textColor="#F8FFF8F8"
+                android:layout_gravity="center"/>
         </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
 
 </LinearLayout>
