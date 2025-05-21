@@ -1,5 +1,6 @@
 package com.swn.hostelmanagementsystem.ui.admin
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
@@ -12,6 +13,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.swn.hostelmanagementsystem.R
+import com.swn.hostelmanagementsystem.ui.auth.LoginActivity
 
 class AdminDashboardActivity : AppCompatActivity() {
 
@@ -20,6 +22,7 @@ class AdminDashboardActivity : AppCompatActivity() {
     private lateinit var navigationView: NavigationView
     private lateinit var bottomNavigationView: BottomNavigationView
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin_dashboard)
@@ -55,7 +58,6 @@ class AdminDashboardActivity : AppCompatActivity() {
         // Set email
         headerEmail.text = currentUser?.email
 
-        // Fetch name from Firestore
         currentUser?.uid?.let { uid ->
             db.collection("users").document(uid).get()
                 .addOnSuccessListener { document ->
@@ -91,6 +93,18 @@ class AdminDashboardActivity : AppCompatActivity() {
             drawerLayout.closeDrawers()
             true
         }
+        val logoutText = findViewById<TextView>(R.id.text_logout)
+        logoutText.setOnClickListener {
+            // Clear session or shared preferences
+            val preferences = getSharedPreferences("user_session", MODE_PRIVATE)
+            preferences.edit().clear().apply()
+
+            // Redirect to Login Screen
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
 
         // Handle bottom nav clicks
         bottomNavigationView.setOnItemSelectedListener { menuItem ->

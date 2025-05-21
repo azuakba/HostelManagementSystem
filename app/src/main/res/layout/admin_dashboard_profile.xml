@@ -107,17 +107,6 @@
                 tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/saveButton"
-            style="@style/Widget.MaterialComponents.Button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:paddingHorizontal="16dp"
-            android:text="@string/save_profile"
-            android:textColor="#fffcf9"
-            tools:ignore="VisualLintButtonSize" />
     </LinearLayout>
 
 </ScrollView>

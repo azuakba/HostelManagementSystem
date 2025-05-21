@@ -144,7 +144,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Payment Issues"
+                            android:text="Payment Details"
                             android:textSize="16sp" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -183,6 +183,7 @@
                             android:textSize="16sp" />
 
                         <TextView
+                            android:id="@+id/text_logout"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Logout"

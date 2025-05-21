@@ -51,7 +51,7 @@
     <string name="fee_amount">Fee Amount</string>
     <string name="add_fee">Add fee</string>
     <string name="student_id">Student id</string>
-    <string name="search_by_student_id_or_name">Search by student ID\n</string>
+    <string name="search_by_student_name">Search by student Name\n</string>
     <string name="no_history_found">No history found</string>
     <string name="pay_room_rent">Pay room rent</string>
     <string name="pay_now">Pay now</string>
@@ -84,4 +84,21 @@
     <string name="_0">0</string>
     <string name="fee_payment_history">Fee payment history\n</string>
     <string name="add_new_fee">Add new fee\n</string>
+    <string name="logout">Logout</string>
+    <string name="search_by_student_id_or_name">Search by student Name</string>
+    <string name="select_fee_type">Select Fee Type:</string>
+    <string name="room_rent">Room Rent</string>
+    <string name="mess_fee">Mess Fee</string>
+    <string name="Save_Changes">Save Changes</string>
+    <string name="Address">Address</string>
+    <string name="Bio">Bio</string>
+    <string name="Edit_profile">Edit Profile</string>
+    <string name="Full_name">Full Name</string>
+    <string name="ADdress">Address</string>
+    <string name="Save_changes">Save Changes</string>
+    <string name="old_password">old password</string>
+    <string name="new_password">new password</string>
+    <string name="confirm_new_password">confirm new password</string>
+    <string name="update_password">update password</string>
+    <string name="change_password">Change Password</string>
 </resources>
