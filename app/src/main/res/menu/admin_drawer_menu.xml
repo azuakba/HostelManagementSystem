@@ -4,9 +4,14 @@
         android:icon="@drawable/ic_person"
         android:title="Admin Profile" />
     <item
-        android:id="@+id/nav_settings"
-        android:icon="@drawable/ic_settings"
-        android:title="Settings" />
+        android:id="@+id/nav_notices"
+        android:title="Manage Notices"
+        android:icon="@drawable/ic_notice" />
+
+    <item
+        android:id="@+id/nav_attendance"
+        android:title="Attendance Management"
+        android:icon="@drawable/ic_attendance" />
     <item
         android:id="@+id/nav_students"
         android:icon="@drawable/ic_person"
@@ -15,4 +20,16 @@
         android:id="@+id/nav_fees"
         android:icon="@drawable/ic_bed"
         android:title="@string/fee_management" />
+    <item
+        android:id="@+id/nav_rooms"
+        android:icon="@drawable/ic_rooms"
+        android:title="Room Management"/>
+    <item
+        android:id="@+id/nav_hostel"
+        android:title="Hostel Management"
+        android:icon="@drawable/ic_hostel" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
 </menu>

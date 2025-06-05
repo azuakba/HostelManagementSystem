@@ -35,6 +35,45 @@
             android:textColor="@android:color/darker_gray"
             android:paddingTop="4dp"/>
 
+        <!-- Assigned Room (visible if already assigned) -->
+        <TextView
+            android:id="@+id/studentRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room: Not assigned"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:paddingTop="4dp"
+            android:visibility="gone"/>
+        <!-- Dropdowns for unapproved students -->
+        <LinearLayout
+            android:id="@+id/layoutDropdowns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:paddingTop="8dp">
+
+            <Spinner
+                android:id="@+id/spinnerHostelAssign"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown"/>
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/spinnerRoomAssign"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+
         <!-- Buttons Row -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,13 +82,13 @@
             android:paddingTop="12dp"
             android:gravity="end">
 
-            <!-- Approve Button -->
+            <!-- Assign Room Button -->
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/approveButton"
+                android:id="@+id/assignRoomButton"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Approve"
+                android:text="Assign Room"
                 app:cornerRadius="8dp"
                 app:icon="@drawable/ic_check"
                 app:iconPadding="8dp"

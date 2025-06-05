@@ -2,8 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <application
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
+    <!-- Permissions for camera and reading images -->
+    <uses-permission android:name="android.permission.CAMERA"
+        tools:ignore="ManifestOrder" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:enableOnBackInvokedCallback="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,39 +24,78 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HostelManagementSystem"
         tools:targetApi="31">
-        <activity android:name=".ui.admin.AdminDashboardProfileActivity" />
-        <activity android:name=".ui.admin.SettingsActivity" />
-        <activity android:name=".ui.admin.ManageStudents" />
-        <activity android:name=".ui.student.StudentDashboardProfile"/>
 
-        <activity android:name=".ui.admin.AddEditStudentActivity"/>
-        <activity android:name=".ui.student.StudentDashboardPayment"/>
-        <activity android:name=".ui.student.StudentDashboardRoomDetails"/>
-        <activity android:name=".ui.student.StudentSetting"/>
-        <activity android:name=".ui.student.StudentDashboardComplainAndRequest"/>
-        <activity android:name=".ui.student.StudentDashboardAttendance"/>
-        <activity android:name=".ui.admin.FeeManagement"/>
-        <activity
-            android:name=".ui.student.StudentDashboardActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.admin.AdminDashboardActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.DashboardActivity"
-            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.HostelManagementSystem">
+            android:theme="@style/Theme.HostelManagementSystem.Splash"> <!-- Optional: splash theme -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Admin Activities -->
+        <activity android:name=".ui.admin.HostelManagementActivity" />
+
+        <activity android:name=".ui.admin.AddHostelActivity"/>
+        <activity
+            android:name=".ui.admin.AdminAttendanceActivity"
+            android:label="Admin Attendance"
+            android:exported="false" />
+        <activity android:name=".ui.admin.AdminNoticeActivity"/>
+        <activity android:name=".ui.admin.AdminSettings"/>
+        <activity android:name=".ui.admin.AdminDashboardProfileActivity" />
+        <activity android:name=".ui.admin.ManageStudents" />
+        <activity android:name=".ui.admin.FeeManagement"/>
+        <activity android:name=".ui.admin.RoomManagementActivity"/>
+        <activity android:name=".ui.admin.AdminDashboardActivity" android:exported="false" />
+
+        <!-- Shared Activities -->
+        <activity android:name=".ui.shared.EditProfile"/>
+
+        <!-- Student Activities -->
+        <activity android:name="com.razorpay.CheckoutActivity"
+            android:theme="@style/Theme.Razorpay.Safe"
+            tools:replace="android:theme"/>
+
+        <activity android:name=".ui.admin.EditHostelActivity"
+            android:label="Edit Hostel"
+            android:parentActivityName=".ui.admin.HostelManagementActivity">
+            <!-- Support Up (back button on toolbar) -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.admin.HostelManagementActivity" />
+        </activity>
+
+
+
+        <activity android:name=".ui.student.StudentPaymentActivity"/>
+        <activity android:name=".ui.student.StudentDashboardFragment"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".ui.student.StudentAttendanceFragment"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".ui.student.StudentMainActivity"/>
+
+        <!-- Auth Activities -->
+        <activity android:name=".ui.auth.ChangePasswordActivity" />
         <activity android:name=".ui.auth.LoginActivity" />
         <activity android:name=".ui.auth.RegisterActivity" />
+
+        <!-- Common Activities -->
+        <activity
+            android:name=".ui.DashboardActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
     </application>
 
 </manifest>

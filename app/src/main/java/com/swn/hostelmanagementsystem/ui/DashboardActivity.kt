@@ -7,8 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.swn.hostelmanagementsystem.ui.admin.AdminDashboardActivity
-import com.swn.hostelmanagementsystem.ui.student.StudentDashboardActivity
 import com.swn.hostelmanagementsystem.R
+import com.swn.hostelmanagementsystem.ui.student.StudentDashboardFragment
 
 class DashboardActivity : AppCompatActivity() {
 
@@ -35,7 +35,7 @@ class DashboardActivity : AppCompatActivity() {
                         if (role == "admin") {
                             startActivity(Intent(this, AdminDashboardActivity::class.java))
                         } else {
-                            startActivity(Intent(this, StudentDashboardActivity::class.java))
+                            startActivity(Intent(this, StudentDashboardFragment::class.java))
                         }
                         finish()
                     } else {

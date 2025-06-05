@@ -105,4 +105,16 @@
     <string name="Change_password">Change Password</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="LOGOUT">Logout</string>
+    <string name="admin_dashboard_title">Admin Dashboard</string>
+    <string name="admin_name_placeholder">Name: Admin</string>
+    <string name="admin_email_placeholder">Email: admin@example.com</string>
+    <string name="total_students">Total Students</string>
+    <string name="occupied_rooms">Occupied Rooms</string>
+    <string name="fees_collected">Fees Collected</string>
+    <string name="pending_payments">Pending Payments</string>
+    <string name="recent_requests">Recent Requests</string>
+    <string name="_0_0">0 / 0</string>
+    <string name="_0_">₹ 0</string>
+    <string name="loading">Loading...</string>
+    <string name="email_id">Email</string>
 </resources>

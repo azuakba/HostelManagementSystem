@@ -41,7 +41,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etNameRegister" />
 
-
     <EditText
         android:id="@+id/etPasswordRegister"
         android:layout_width="0dp"
@@ -54,21 +53,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etEmailRegister" />
 
+    <ImageView
+        android:id="@+id/ivTogglePassword"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_eye_closed"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="Toggle Password"
+        app:layout_constraintEnd_toEndOf="@id/etPasswordRegister"
+        app:layout_constraintTop_toTopOf="@id/etPasswordRegister" />
+
+    <EditText
+        android:id="@+id/etConfirmPasswordRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPasswordRegister" />
+
+    <ImageView
+        android:id="@+id/ivToggleConfirmPassword"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_eye_closed"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="Toggle Confirm Password"
+        app:layout_constraintEnd_toEndOf="@id/etConfirmPasswordRegister"
+        app:layout_constraintTop_toTopOf="@id/etConfirmPasswordRegister" />
+
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Register"
-        app:layout_constraintTop_toBottomOf="@id/etPasswordRegister"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/etConfirmPasswordRegister"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <TextView
         android:id="@+id/tvLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Already have an account? Login"
-        android:textColor="@color/purple_700"
         android:layout_marginTop="10dp"
         app:layout_constraintTop_toBottomOf="@id/btnRegister"
         app:layout_constraintStart_toStartOf="parent"
